@@ -24,3 +24,11 @@ function addTasks() {
     saveTasks();
     displayTasks();
 }
+
+// membuat function remoove
+function removeTask(i) {
+    tasks.splice(i, 1);
+    saveTask();
+    displayTasks();
+}
+
