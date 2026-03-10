@@ -11,12 +11,20 @@
     </head>
     <body>
         <!-- ----------------------------- html start ------------------------------ -->
-        <h1>Hello World</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
+        <h2>To Do List</h2>
+
+        <input id="task" placeholder="New Task" />
+        <button onclick="addTask()">Add</button>
+        <ul id="list"></ul>
+        <button onclick="clearAll()">Clear All</button>
         <!-- ------------------------------ html end ------------------------------- -->
 
         <!-- javascript start -->
-        <script src="script.js"></script>
+
+        <script src="script.js">
+            // deklarasi task array
+            let tasks = [];
+        </script>
         <!-- javascript end -->
     </body>
 </html>
