@@ -28,7 +28,7 @@ function addTasks() {
 // membuat function remoove
 function removeTask(i) {
     tasks.splice(i, 1);
-    saveTask();
+    saveTasks();
     displayTasks();
 }
 
@@ -44,3 +44,14 @@ function loadTasks() {
         tasks = JSON.parse(saved);
     }
 }
+
+// membuat function clearAll
+function clearAll(i) {
+    tasks = [];
+    saveTasks();
+    displayTasks();
+}
+
+// ------------------------------ main program ---------------------------------
+loadTasks();
+displayTasks();
