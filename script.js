@@ -11,3 +11,16 @@ function displayTasks() {
     }
     document.getElementById("list").innerHTML = html;
 }
+
+// membuat function add task
+function addTasks() {
+    let taskInput = document.getElementById("task");
+    let text = taskInput.value;
+    if (text === "") {
+        return;
+    }
+    tasks.push(text);
+    taskInput.value = "";
+    saveTasks();
+    displayTasks();
+}
