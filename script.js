@@ -32,7 +32,15 @@ function removeTask(i) {
     displayTasks();
 }
 
-// membuat function save
+// membuat function save task
 function saveTasks() {
     localStorage.setItem("tasks", JSON.stringify(tasks));
+}
+
+// membuat function load task
+function loadTasks() {
+    let saved = localStorage.getItem("tasks");
+    if (saved !== null) {
+        tasks = JSON.parse(saved);
+    }
 }
